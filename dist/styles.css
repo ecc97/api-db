@@ -8,69 +8,127 @@
 }
 
 body {
-    background-image: url('https://i0.wp.com/senpai.com.mx/wp-content/uploads/2020/06/Dragon-Ball_-La-Montan%CC%83a-Paoz-existe-en-la-vida-real.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: darkgray;
-    background-attachment: fixed;
-    background-blend-mode: darken;
-    color: white;
+  background-image: url('https://i0.wp.com/senpai.com.mx/wp-content/uploads/2020/06/Dragon-Ball_-La-Montan%CC%83a-Paoz-existe-en-la-vida-real.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: darkgray;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+  color: white;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-heading {
+  padding: 3rem;
+  font-size: 64px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitle-heading {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 2rem 3rem;
+  width: 100%;
+}
+
+.item {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  padding: 1rem;
+  width: 450px;
+}
+
+.item>h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.item>img {
+  width: 300px;
+  height: 300px;
+}
+
+.item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.item > img:hover {
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination {
+  display: flex;
+  width: 23%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pagination button {
+  padding: 1rem;
+  border: 1px solid #ffffff;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+@media (width <= 980px) {
   .title-heading {
-    padding: 3rem;
-    font-size: 64px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 40px;
   }
-  
-  .title-subheading {
-    padding: 2.5rem;
-    font-size: 24px;
-    text-align: center;
+  .title-heading > img {
+    width: 200px;
   }
-  
+}
+
+@media (width <= 768px) {
+  .title-heading {
+    font-size: 20px;
+    padding: 1rem 0;
+  }
+  .title-heading > img {
+    width: 150px;
+  }
+
   .item-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 2rem;
-    padding: 2rem 3rem;
+    justify-content: center;
+    padding: 0;
   }
-  
+
   .item {
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .5rem;
-    padding: 1rem;
-    width: 450px;
+    width: 350px;
   }
 
-  .item > h4 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 10px;
+  .item>img {
+    width: 150px;
   }
+}
 
-  .item > img {
+@media (width <= 480px) {
+  .item {
     width: 300px;
-    height: 300px;
   }
-
-  .item:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
+}
