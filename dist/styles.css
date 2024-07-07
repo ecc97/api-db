@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-image: url('https://i0.wp.com/senpai.com.mx/wp-content/uploads/2020/06/Dragon-Ball_-La-Montan%CC%83a-Paoz-existe-en-la-vida-real.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: darkgray;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title-heading {
+    padding: 3rem;
+    font-size: 64px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title-subheading {
+    padding: 2.5rem;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 2rem 3rem;
+  }
+  
+  .item {
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem;
+    width: 450px;
+  }
+
+  .item > h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .item > img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
